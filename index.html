@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+	<div class="calculator">
+        <div class="menu">
+            <div>&larr;</div>
+            <div>calculator</div>
+            <div>&#8942;</div>
+              </div> 
+		<div class="display">
+			<input type="text" id="result" disabled>
+		</div>
+		<div class="keypad">
+			<button class="operator" onclick="clearResult()">C</button>
+			<button class="operator" onclick="backspace()">CE</button>
+			<button class="operator" onclick="insertValue('+')">+</button>
+			<button class="operator" onclick="insertValue('-')">-</button>
+			<button onclick="insertValue('7')">7</button>
+			<button onclick="insertValue('8')">8</button>
+			<button onclick="insertValue('9')">9</button>
+			<button class="operator" onclick="insertValue('*')">x</button>
+			<button onclick="insertValue('4')">4</button>
+			<button onclick="insertValue('5')">5</button>
+			<button onclick="insertValue('6')">6</button>
+			<button class="operator" onclick="insertValue('/')">/</button>
+			
+			<button onclick="insertValue('1')">1</button>
+			<button onclick="insertValue('2')">2</button>
+			<button onclick="insertValue('3')">3</button>
+			<button class="operator equal" onclick="calculateResult()">=</button>
+			<button onclick="insertValue('0')">0</button>
+			<button onclick="insertValue('.')">.</button>
+			<button class="operator" onclick="insertValue('%')">%</button>
+		</div>
+	</div>
+	<script src="calculator.js"></script>
+</body>
+</html>
